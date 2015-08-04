@@ -1,6 +1,6 @@
 #logo {
-	width: 200px;
-	height: auto;
+  width: 200px;
+  height: auto;
 }
 img {
   width: 50%;
@@ -22,8 +22,8 @@ img {
 }
 
 body {
-	background: rgba(102, 224, 255, 0.8);
-	font-family: 'Alegreya Sans', sans-serif;
+  background: rgba(102, 224, 255, 0.8);
+  font-family: 'Alegreya Sans', sans-serif;
 }
 
 p{
@@ -49,21 +49,21 @@ h4{
 }
 
 #tips {
-	font-size: 140%;
+  font-size: 140%;
 }
 
 #green{
-	color: rgb(0, 102, 0);
+  color: rgb(0, 102, 0);
 }
 
-.gamepage{
+/*.gamepage{
   display: none;
-}
+}*/
 
 #footer {
-	font-family: 'Alegreya Sans', sans-serif;
-	font-size: 140%;
-	background-color: rgb(255, 255, 255);
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 140%;
+  background-color: rgb(255, 255, 255);
 }
 
 .footer {
@@ -403,6 +403,22 @@ input.cool {
   display: none;
 }
 
+.mission{
+  display: none;
+}
+
+#greenFont {
+  color: #00CC00;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 250%;
+}
+
+#bigFont {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 250%;
+  color: #000000;
+}
+
 .login{
     font-family: 'Trebuchet MS', Helvetica, sans-serif;
     font-size:15px;
@@ -412,3 +428,5 @@ input.cool {
     background-color: rgba(255, 255, 255, 0.5);
     
 }
+
+

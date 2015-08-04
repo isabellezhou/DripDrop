@@ -14,10 +14,10 @@ function getUsers(data) {
     console.log(users);
 }
 
- $('#submit').click(function() {
-    console.log($('#un').val());
-    console.log($('#pwd').val());
 
+ $('#submit').click(function() {
+    console.log($('#pwd').val());
+    console.log($('#un').val());
     if ($('#un').val() in users) {
         console.log("username is in user");
         if ($('#pwd').val() == users[$('#un').val()]){
@@ -422,6 +422,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   $("#logobutton").click(function(){
+    $("div.mission").toggle();
     $("div.calculatorpage").hide();
     $("div.profilepage").hide();
     $("div.newspage").hide();
@@ -435,6 +436,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   $("#calculatorbutton").click(function(){
+        $("div.mission").hide();
           $("div.calculatorpage").toggle();
           $("div.loading").remove()
           $("div.profilepage").hide();
@@ -443,11 +445,14 @@ $(document).ready(function(){
           $("div.footer").hide();
           $("div.aboutuspage").hide();
           $("div.login").hide();
+          window.scrollTo(0,0);
         });
 });
 
 $(document).ready(function(){
   $("#profilebutton").click(function(){
+            $("div.mission").hide();
+
           $("div.profilepage").toggle();
           $("div.loading").remove()
           $("div.calculatorpage").hide();
@@ -456,11 +461,14 @@ $(document).ready(function(){
           $("div.footer").hide();
           $("div.aboutuspage").hide();
           $("div.login").hide();
+          window.scrollTo(0,0);
         });
 });
 
 $(document).ready(function(){
   $("#newsbutton").click(function(){
+            $("div.mission").hide();
+
           $("div.newspage").toggle();
           $("div.loading").remove()
           $("div.calculatorpage").hide();
@@ -469,11 +477,15 @@ $(document).ready(function(){
           $("div.footer").hide();
           $("div.aboutuspage").hide();
           $("div.login").hide();
+          window.scrollTo(0,0);
         });
 });
 
 $(document).ready(function(){
   $("#gamebutton").click(function(){
+            $("div.mission").hide();
+
+        console.log("poop");
           $("div.newspage").hide();
           $("div.loading").remove()
           $("div.calculatorpage").hide();
@@ -482,11 +494,14 @@ $(document).ready(function(){
           $("div.footer").hide();
           $("div.aboutuspage").hide();
           $("div.login").hide();
+          window.scrollTo(0,0);
         });
 });
 
 $(document).ready(function(){
   $("#aboutusbutton").click(function(){
+            $("div.mission").hide();
+
           $("div.newspage").hide();
           $("div.loading").remove()
           $("div.calculatorpage").hide();
@@ -495,55 +510,56 @@ $(document).ready(function(){
           $("div.footer").hide();
           $("div.aboutuspage").toggle();
           $("div.login").hide();
+          window.scrollTo(0,0);
         });
 });
 
 $(document).ready(function() {
-	$("#showerbutton").click(function() {
+  $("#showerbutton").click(function() {
 
-   		$('html,body').animate({
-        	scrollTop: $(".shower").offset().top-215},
-        	'slow');
-});
-});
-
-$(document).ready(function() {
-	$("#toiletbutton").click(function() {
-   		$('html,body').animate({
-        	scrollTop: $(".toilet").offset().top-215},
-        	'slow');
+      $('html,body').animate({
+          scrollTop: $(".shower").offset().top-215},
+          'slow');
 });
 });
 
 $(document).ready(function() {
-	$("#laundrybutton").click(function() {
-   		$('html,body').animate({
-        	scrollTop: $(".laundry").offset().top-215},
-        	'slow');
+  $("#toiletbutton").click(function() {
+      $('html,body').animate({
+          scrollTop: $(".toilet").offset().top-215},
+          'slow');
 });
 });
 
 $(document).ready(function() {
-	$("#dishwasherbutton").click(function() {
-   		$('html,body').animate({
-        	scrollTop: $(".dishwasher").offset().top-215},
-        	'slow');
+  $("#laundrybutton").click(function() {
+      $('html,body').animate({
+          scrollTop: $(".laundry").offset().top-215},
+          'slow');
 });
 });
 
 $(document).ready(function() {
-	$("#generalbutton").click(function() {
-   		$('html,body').animate({
-        	scrollTop: $(".general").offset().top-215},
-        	'slow');
+  $("#dishwasherbutton").click(function() {
+      $('html,body').animate({
+          scrollTop: $(".dishwasher").offset().top-215},
+          'slow');
 });
 });
 
 $(document).ready(function() {
-	$("#totalbutton").click(function() {
-   		$('html,body').animate({
-        	scrollTop: $(".total").offset().top},
-        	'slow');
+  $("#generalbutton").click(function() {
+      $('html,body').animate({
+          scrollTop: $(".general").offset().top-215},
+          'slow');
+});
+});
+
+$(document).ready(function() {
+  $("#totalbutton").click(function() {
+      $('html,body').animate({
+          scrollTop: $(".total").offset().top},
+          'slow');
 });
 });
 
@@ -587,27 +603,27 @@ t_inputValue = t_vol;
 }
 
 function l_outputUpdate(l_vol) {
-	document.querySelector('#l_volume').value = l_vol;
-	l_inputValue = l_vol;
+  document.querySelector('#l_volume').value = l_vol;
+  l_inputValue = l_vol;
 }
 
 function d_outputUpdate(d_vol) {
-	document.querySelector('#d_volume').value = d_vol;
-	d_inputValue = d_vol;
+  document.querySelector('#d_volume').value = d_vol;
+  d_inputValue = d_vol;
 }
 
 function g_outputUpdate(g_vol) {
-	document.querySelector('#g_volume').value = g_vol;
-	g_inputValue = g_vol;
+  document.querySelector('#g_volume').value = g_vol;
+  g_inputValue = g_vol;
 }
 
 function s_gallons(){
-	document.getElementById("s").innerHTML = "You've used " + (s_inputValue*2).toFixed(2) + " gallons of water.";
-	return s_inputValue;
+  document.getElementById("s").innerHTML = "You've used " + (s_inputValue*2).toFixed(2) + " gallons of water.";
+  return s_inputValue;
 }
 
 function t_gallons(){
-	document.getElementById("t").innerHTML = "You've used " + (t_inputValue*1.6).toFixed(2) + " gallons of water.";
+  document.getElementById("t").innerHTML = "You've used " + (t_inputValue*1.6).toFixed(2) + " gallons of water.";
 }
 
 function l_gallons(){
@@ -615,19 +631,20 @@ function l_gallons(){
 }
 
 function d_gallons(){
-	document.getElementById("d").innerHTML = "You've used " + (d_inputValue*5.5).toFixed(2) + " gallons of water.";
+  document.getElementById("d").innerHTML = "You've used " + (d_inputValue*5.5).toFixed(2) + " gallons of water.";
 }
 
 function g_gallons(){
-	document.getElementById("g").innerHTML = "You've used " + (g_inputValue*22.4).toFixed(2) + " gallons of water.";
+  document.getElementById("g").innerHTML = "You've used " + (g_inputValue*22.4).toFixed(2) + " gallons of water.";
 }
 
 var total = 0;
 
 function total_gallons(){
   var total= (((s_inputValue*2)+(t_inputValue*1.6)+(l_inputValue*19.5)+(d_inputValue*5.5)+(g_inputValue*22.4))).toFixed(2);
-	document.getElementById("tot").innerHTML = "You've used " + total + " gallons of water.";
+  document.getElementById("tot").innerHTML = "You've used " + total + " gallons of water.";
   return total;
 }
 
-console.log(total);
+
+
