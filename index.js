@@ -6,25 +6,40 @@ $(document).ready(function(){
 var users = {};
 
 function getUsers(data) {
-    console.log(data);
     for (var i = 0; i < data.length; i++) {
-        console.log(data[i]);
+        // console.log(data[i]);
         users[data[i]['usr']] = data[i]['pwd'];
     }
-    console.log(users);
 }
 
 
- $('#submit').click(function() {
-    console.log($('#pwd').val());
-    console.log($('#un').val());
-    if ($('#un').val() in users) {
-        console.log("username is in user");
+ // $('#submit').click(function() {
+ //    console.log("youhaveasyntaxerror");
+    // console.log($('#pwd').val());
+    // console.log($('#un').val());
+    // if ($('#un').val() in users) {
+    //     console.log("username is in user");
+    //     if ($('#pwd').val() == users[$('#un').val()]){
+    //         alert("You are in!");
+
+    //     }
+    // }
+  // });
+
+// $('#submit2').click(function() {
+//     console.log("yo");
+// });
+
+function submitClick() {
+   if ($('#un').val() in users) {
+        // console.log("username is in user");
         if ($('#pwd').val() == users[$('#un').val()]){
             alert("You are in!");
+        } else {
+          alert("Your username or password seems to be incorrect. Please try again or create a new account with us!");
         }
-    }
-});
+}
+}       
 
  (function(global) {
   "use strict";
@@ -405,9 +420,9 @@ function getUsers(data) {
 })(this);
 
 
-function verifyLogin() {
+// function verifyLogin() {
 
-}
+// }
 
 
 $(document).ready(function(){ 
@@ -485,7 +500,7 @@ $(document).ready(function(){
   $("#gamebutton").click(function(){
             $("div.mission").hide();
 
-        console.log("poop");
+        // console.log("poop");
           $("div.newspage").hide();
           $("div.loading").remove()
           $("div.calculatorpage").hide();
@@ -645,6 +660,3 @@ function total_gallons(){
   document.getElementById("tot").innerHTML = "You've used " + total + " gallons of water.";
   return total;
 }
-
-
-
