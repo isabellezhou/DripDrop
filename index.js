@@ -12,24 +12,6 @@ function getUsers(data) {
     }
 }
 
-
- // $('#submit').click(function() {
- //    console.log("youhaveasyntaxerror");
-    // console.log($('#pwd').val());
-    // console.log($('#un').val());
-    // if ($('#un').val() in users) {
-    //     console.log("username is in user");
-    //     if ($('#pwd').val() == users[$('#un').val()]){
-    //         alert("You are in!");
-
-    //     }
-    // }
-  // });
-
-// $('#submit2').click(function() {
-//     console.log("yo");
-// });
-
 function submitClick() {
    if ($('#un').val() in users) {
         // console.log("username is in user");
@@ -74,7 +56,6 @@ function submitClick() {
   };
 
   var Tabletop = function(options) {
-    // Make sure Tabletop is being used as a constructor no matter what.
     if(!this || !(this instanceof Tabletop)) {
       return new Tabletop(options);
     }
