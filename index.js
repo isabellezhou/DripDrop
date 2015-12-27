@@ -418,7 +418,8 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   $("#logobutton").click(function(){
-    $("div.mission").toggle();
+    $("div.mission").show();
+    // $("div.mission").toggle();
     $("div.calculatorpage").hide();
     $("div.profilepage").hide();
     $("div.newspage").hide();
@@ -433,7 +434,8 @@ $(document).ready(function(){
 $(document).ready(function(){
   $("#calculatorbutton").click(function(){
         $("div.mission").hide();
-          $("div.calculatorpage").toggle();
+          $("div.calculatorpage").show();
+          // $("div.calculatorpage").toggle();
           $("div.loading").remove()
           $("div.profilepage").hide();
           $("div.newspage").hide();
@@ -448,8 +450,8 @@ $(document).ready(function(){
 $(document).ready(function(){
   $("#profilebutton").click(function(){
             $("div.mission").hide();
-
-          $("div.profilepage").toggle();
+            $("div.profilepage").show();
+          // $("div.profilepage").toggle();
           $("div.loading").remove()
           $("div.calculatorpage").hide();
           $("div.newspage").hide();
@@ -464,8 +466,8 @@ $(document).ready(function(){
 $(document).ready(function(){
   $("#newsbutton").click(function(){
             $("div.mission").hide();
-
-          $("div.newspage").toggle();
+          $("div.newspage").show();
+          // $("div.newspage").toggle();
           $("div.loading").remove()
           $("div.calculatorpage").hide();
           $("div.gamepage").hide();
@@ -480,12 +482,12 @@ $(document).ready(function(){
 $(document).ready(function(){
   $("#gamebutton").click(function(){
             $("div.mission").hide();
-
         // console.log("poop");
           $("div.newspage").hide();
           $("div.loading").remove()
           $("div.calculatorpage").hide();
-          $("div.gamepage").toggle();
+          // $("div.gamepage").toggle();
+           $("div.gamepage").show();
           $("div.profilepage").hide();
           $("div.footer").hide();
           $("div.aboutuspage").hide();
@@ -504,7 +506,8 @@ $(document).ready(function(){
           $("div.gamepage").hide();
           $("div.profilepage").hide();
           $("div.footer").hide();
-          $("div.aboutuspage").toggle();
+          // $("div.aboutuspage").toggle();
+          $("div.aboutuspage").show();
           $("div.login").hide();
           window.scrollTo(0,0);
         });
